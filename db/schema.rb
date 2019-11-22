@@ -12,6 +12,11 @@
 
 ActiveRecord::Schema.define(version: 20191122202930) do
 
+  create_table "students", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+  end
+
   create_table "students_tables", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
